@@ -14,7 +14,8 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
-    <script src="https://kit.fontawesome.com/7a812ed866.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
     <title>Software Development Cell Of IITM Janakpuri</title>
   </head>
   <body>
@@ -22,9 +23,8 @@
     <header class="l-header">
       <nav class="nav bd-grid">
         <div>
-          
-          <p class="nav__logo">
-            <i class="fa fa-laptop-code"></i>  SDC | IITM JANAKPURI</p>
+          <img src="./assets/img/logo.png" class="home__navimg"  alt="">
+          <!-- <   -->
         </div>
 
         <div class="nav__toggle" id="nav-toggle">
@@ -41,13 +41,19 @@
               <a href="#home" class="nav__link active">Home</a>
             </li>
             <li class="nav__item">
-              <a href="#cards" class="nav__link">Teams</a>
+              <a href="#cards" class="nav__link">Team</a>
+            </li> 
+            <li class="nav__item">
+              <a href="#event-heading" class="nav__link">Events</a>
             </li>
             <li class="nav__item">
-              <a href="#skills" class="nav__link">Blog</a>
+              <a href="error.html" class="nav__link">Blog</a>
             </li>
             <li class="nav__item">
               <a href="#contact" class="nav__link">Contact</a>
+            </li>
+            <li class="nav__item">
+              <a href="http://iitmjanakpuri-sdc.in/tracking/" class="nav__link" target="_blank">Grievance Redressal</a>
             </li>
           </ul>
         </div>
@@ -96,7 +102,7 @@
               the students and faculty members.
               <br />
             </p>
-            <a href="#contact" class="home__button">Join Us</a>
+            <a href="#contact" class="home__button ">Join Us</a>
           </div>
         </div>
       </section>
@@ -106,55 +112,56 @@
          <div class="blog-slider">
           <div class="blog-slider__wrp swiper-wrapper">
             <div class="blog-slider__item swiper-slide">
+                
               <div class="blog-slider__img">
                 <img
-                  src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759872/kuldar-kalvik-799168-unsplash.webp"
+                src="./assets/img/webev.jpg"
                   alt=""
                 />
               </div>
               <div class="blog-slider__content">
-                <span class="blog-slider__code">26 December 2019</span>
-                <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+                <span class="blog-slider__code">April 2, 2022</span>
+                <div class="blog-slider__title">Website Design Competition</div>
                 <div class="blog-slider__text">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Recusandae voluptate repellendus magni illo ea animi?
+                  Do you love your art and have a tick for creativity? Showcase your creativity by designing a static website. Details will be provided by this weekend.
                 </div>
-                <a href="#" class="blog-slider__button">READ MORE</a>
+                <!-- <a href="#" class="blog-slider__button">READ MORE</a> -->
               </div>
             </div>
             <div class="blog-slider__item swiper-slide">
               <div class="blog-slider__img">
                 <img
-                  src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759871/jason-leung-798979-unsplash.webp"
+                  src="./assets/img/wehackev.png"
                   alt=""
                 />
               </div>
               <div class="blog-slider__content">
-                <span class="blog-slider__code">26 December 2019</span>
-                <div class="blog-slider__title">Lorem Ipsum Dolor2</div>
+                <span class="blog-slider__code">1 May 2022</span>
+                <div class="blog-slider__title"> &ltwe_hack&gt </div>
                 <div class="blog-slider__text">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Recusandae voluptate repellendus magni illo ea animi?
+                  SDC presents &ltwe_hack&gt'22. Coding Competition for Coders by Coders. There will be three phase.
+                  <br> 1) Coding Round
+                  <br> 2) Ideation and Prototype Submission Round
+                  <br> 3) Onsite Presentation 
                 </div>
-                <a href="#" class="blog-slider__button">READ MORE</a>
+                <!-- <a href="#" class="blog-slider__button">READ MORE</a> -->
               </div>
             </div>
 
             <div class="blog-slider__item swiper-slide">
               <div class="blog-slider__img">
                 <img
-                  src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759871/alessandro-capuzzi-799180-unsplash.webp"
-                  alt=""
+                src="./assets/img/workshp.png"
+                 alt=""
                 />
               </div>
               <div class="blog-slider__content">
-                <span class="blog-slider__code">26 December 2019</span>
-                <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+                <span class="blog-slider__code">11 June 2022</span>
+                <div class="blog-slider__title">Workshop - Frontend Master</div>
                 <div class="blog-slider__text">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Recusandae voluptate repellendus magni illo ea animi?
+                  The front-end developer is a fundamental part of any web team, working closely with back-end developers. Learn more about it and interact with a Frontend Developer
                 </div>
-                <a href="#" class="blog-slider__button">READ MORE</a>
+                <!-- <a href="#" class="blog-slider__button">READ MORE</a> -->
               </div>
             </div>
           </div>
@@ -177,7 +184,7 @@
         <div class="container py-2">
           <div class="row pb-4">
             <div class="col-12 text-center">
-              <div class="display-3" id="card-heading"> Meet our Team</div>
+              <div class="display-3" id="card-heading">Our Team</div>
             </div>
           </div>
           <!-- cards -->
@@ -187,25 +194,21 @@
                 <div class="card-body">
                   <div class="user-picture">
                     <img
-                      src="../SDC-Site-Feb/assets/img/Teams Photos/Ayush.jfif"
+                      src="./assets/img/Teams Photos/Ayush.jfif"
                       class="shadow-sm rounded-circle"
                       height="130"
                       width="130"
                     />
                   </div>
                   <div class="user-content">
-                    <h5 class="text-capitalize user-name">Ayush Dhiman</h5>
+                    <h5 class="text-capitalize user-name">Ayush <br> Dhiman</h5>
                     <p
                       class="text-capitalize text-muted small blockquote-footer"
                     >
                      Student Coordinator
                     </p>
                     <p class="small text-muted mb-0">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Amet nemo harum repellendus aut itaque. Temporibus quaerat
-                      dolores ut, cupiditate molestiae commodi! Distinctio
-                      praesentium, debitis aut minima doloribus earum quia
-                      commodi.
+                      Web developer and a coding enthusiast who loves to spend time with algorithms and to solve technical problems.
                     </p>
                   </div>
                 </div>
@@ -216,7 +219,7 @@
                 <div class="card-body">
                   <div class="user-picture">
                     <img
-                    src="../SDC-Site-Feb/assets/img/Teams Photos/shubham.jfif" class="shadow-sm rounded-circle"
+                    src="./assets/img/Teams Photos/shubham.jfif" class="shadow-sm rounded-circle"
                       height="130"
                       width="130"
                     />
@@ -230,7 +233,7 @@
                     </p>
 
                     <p class="small text-muted mb-0">
-                        
+                      Computer Science Student. I love to play with shapes and colours. I contribute and push limits of our Web Development team and Design Team.
                     </p>
                   </div>
                 </div>
@@ -241,7 +244,7 @@
                 <div class="card-body">
                   <div class="user-picture">
                     <img
-                    src="../SDC-Site-Feb/assets/img/Teams Photos/bhavi.jfif" class="shadow-sm rounded-circle"
+                    src="./assets/img/Teams Photos/bhavi.jfif" class="shadow-sm rounded-circle"
                       height="130"
                       width="130"
                     />
@@ -255,11 +258,7 @@
                     </p>
 
                     <p class="small text-muted mb-0">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Amet nemo harum repellendus aut itaque. Temporibus quaerat
-                      dolores ut, cupiditate molestiae commodi! Distinctio
-                      praesentium, debitis aut minima doloribus earum quia
-                      commodi.
+                      Multi Tasker &  Artist. I plan! Planning is an art form for an unforgettable event. Décor – Food – Party management. Yes! We party hard because we work hard too!
                     </p>
                   </div>
                 </div>
@@ -270,7 +269,7 @@
                 <div class="card-body">
                   <div class="user-picture">
                     <img
-                    src="../SDC-Site-Feb/assets/img/Teams Photos/vanshika.jfif"class="shadow-sm rounded-circle"
+                    src="./assets/img/Teams Photos/vanshika.jfif"class="shadow-sm rounded-circle"
                       height="130"
                       width="130"
                     />
@@ -284,11 +283,7 @@
                     </p>
 
                     <p class="small text-muted mb-0">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Amet nemo harum repellendus aut itaque. Temporibus quaerat
-                      dolores ut, cupiditate molestiae commodi! Distinctio
-                      praesentium, debitis aut minima doloribus earum quia
-                      commodi.
+                      Creator & Coder. I enjoy using my skills to contribute to the exciting technological projects. I use my positive attitude and tireless energy to learn something new  and encourage others to work hard.
                     </p>
                   </div>
                 </div>
@@ -299,7 +294,7 @@
                 <div class="card-body">
                   <div class="user-picture">
                     <img
-                    src="../SDC-Site-Feb/assets/img/Teams Photos/himanshi.jfif"class="shadow-sm rounded-circle"
+                    src="./assets/img/Teams Photos/himanshi.jfif"class="shadow-sm rounded-circle"
                       height="130"
                       width="130"
                     />
@@ -313,11 +308,7 @@
                     </p>
 
                     <p class="small text-muted mb-0">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Amet nemo harum repellendus aut itaque. Temporibus quaerat
-                      dolores ut, cupiditate molestiae commodi! Distinctio
-                      praesentium, debitis aut minima doloribus earum quia
-                      commodi.
+                      As a content writer, I prepare a content which is more reliable and relevant. I like to research on articles and blog posts and generating ideas for new content types.
                     </p>
                   </div>
                 </div>
@@ -328,7 +319,7 @@
                 <div class="card-body">
                   <div class="user-picture">
                     <img
-                    src="../SDC-Site-Feb/assets/img/Teams Photos/anurag.jfif"
+                    src="./assets/img/Teams Photos/anurag.jfif"
                     class="shadow-sm rounded-circle"
                       height="130"
                       width="130"
@@ -343,11 +334,7 @@
                     </p>
 
                     <p class="small text-muted mb-0">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Amet nemo harum repellendus aut itaque. Temporibus quaerat
-                      dolores ut, cupiditate molestiae commodi! Distinctio
-                      praesentium, debitis aut minima doloribus earum quia
-                      commodi.
+                      Sometimes I make websites from HTML so good that CSS is not required later. Whatever new I learn, I definitely apply that to my work so it makes the overall project updated and appeasing.
                     </p>
                   </div>
                 </div>
@@ -369,7 +356,7 @@
           <div class="container">
             <div class="row">
               
-                <form id="contact" action="" method="post">
+                <form id="contact" action="https://formspree.io/f/xzbovogj" method="post">
                   <div class="row">
                     <div class="col-lg-6 offset-lg-3">
                       <div class="section-heading">
@@ -417,19 +404,19 @@
                         <ul>
                           <li>
                             <div class="icon">
-                              <img src="../SDC-Site-Feb/assets/img/contact-icon-01.png" alt="email icon">
+                              <img src="./assets/img/contact-icon-01.png" alt="email icon">
                             </div>
                             <a href="#">director@iitmipu.ac.in</a>
                           </li>
                           <li>
                             <div class="icon">
-                              <img src="../SDC-Site-Feb/assets/img/contact-icon-02.png" alt="phone">
+                              <img src="./assets/img/contact-icon-02.png" alt="phone">
                             </div>
                             <a href="#">+91/011-28525882</a>
                           </li>
                           <li>
                             <div class="icon">
-                              <img src="../SDC-Site-Feb/assets/img/contact-icon-03.png" alt="location">
+                              <img src="./assets/img/contact-icon-03.png" alt="location">
                             </div>
                             <a href="#">D-29, Institutional Area, Janakpuri, New Delhi-110058</a>
                           </li>
@@ -447,7 +434,6 @@
           <div class="container">
             <div class="row">
               <div class="col-lg-12">
-                <hr>
                 <p>Copyright © 2022 Software Development Cell | <a rel="nofollow" href="http://www.iitmjanakpuri.com/" "> IITM Janakpuri </a>.  All Rights Reserved. 
                 
              
